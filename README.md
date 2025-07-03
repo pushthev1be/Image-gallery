@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 🖼️ Image Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based image gallery application with upload functionality and responsive design. Built with Create React App and integrated with a Node.js backend for image management.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Image Upload**: Upload and manage images with drag-and-drop support
+- **Responsive Gallery**: Grid-based layout that adapts to different screen sizes
+- **Image Preview**: Full-size image viewing with navigation
+- **Search & Filter**: Find images by title or description
+- **Modern UI**: Clean, intuitive interface with smooth animations
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React, JavaScript, CSS3
+- **Styling**: CSS Modules / Styled Components
+- **Build Tool**: Create React App
+- **Backend Integration**: REST API calls to image-backend service
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+- Node.js (v14 or higher)
+- npm or yarn package manager
+- Running instance of the image-backend API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/pushthev1be/Image-gallery.git
+   cd Image-gallery
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Configure API endpoint**
+   - Update the API base URL in your configuration to point to your backend service
+   - Default: `http://localhost:5000/api`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🏗️ Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+├── components/          # Reusable UI components
+├── pages/              # Main application pages
+├── services/           # API service functions
+├── styles/             # CSS and styling files
+├── utils/              # Utility functions
+└── App.js              # Main application component
+```
 
-## Learn More
+## 🔧 Configuration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app expects the backend API to be running and accessible. Update the API configuration in:
+- `src/services/api.js` - API base URL and endpoints
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Deployment
 
-### Code Splitting
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Deploy the build folder**
+   - The `build` folder contains the production-ready files
+   - Can be deployed to Vercel, Netlify, or any static hosting service
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+MIT License - see LICENSE file for details
 
-### Advanced Configuration
+## 🔗 Related Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Image Backend API](https://github.com/pushthev1be/image-backend) - Backend service for this gallery
